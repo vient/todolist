@@ -1,7 +1,6 @@
 todos = [];
 checked = [];
 
-
 createTodo = function(_text) {
     var main = $("<div>").attr("class", "col-xs-12 todoElem");
     var row = $("<div>").attr("class", "row");
@@ -32,7 +31,6 @@ removeTodoFadeOut = function(todo) {
 removeTodo = function(todo) {
     removeTodoStorage(todo);
     todo.remove();
-    // removeTodoFadeOut(todo);
 }
 
 $(document).on("click", ".todoElem input", function() {
@@ -94,10 +92,6 @@ $(document).ready(function() {
         $(".todoElem input:checked").click();
     });
     $("#clearButton").click(function() {
-        var elements = $(".todoElem input:checked").parents(".todoElem");
-        elements.each(function(index) {
-            removeTodo(this);    
-        });
-        // removeTodoFadeOut(elements);
+        $("a", $(".todoElem input:checked").parents(".todoElem")).trigger("click");
     });
 });
