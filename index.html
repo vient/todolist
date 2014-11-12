@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Todos</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                    <div id="listRow" class="row">
+                        <div id="todoHeader" class="col-xs-12"> To-do list </div>
+                    </div>
+                    <div id="emptyRow" class="row">
+                        <div class="col-xs-12"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div id="main">
+            <div class="title">Todos</div>
+        </div>
+        -->
+        <!--
+        <div class="row-bottom">
+            <div class="row-bottom-shifted-10px">
+                <div class="row" style="margin-left">
+                    <div class=""
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                </div>
+            </div>
+        </div>
+        -->
+        
+        <nav class="navbar navbar-my navbar-fixed-bottom" role="navigation">
+            <div class="row">
+                <form id="addTodoForm" class="navbar-form" role="addTodo">
+                    <div class="form-group col-md-7 col-md-offset-1 col-sm-12 col-sm-offset-0">
+                        <input type="text" class="form-control" id="addTodoTextArea" placeholder="TODO:" style="width:100%;">
+                    </div>
+                </form>
+                <div class="col-md-1 col-md-offset-0 col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                    <button id="checkAllButton" type="button" class="btn btn-default" style="min-width: 100px; width: 100%;">Check all</button>
+                </div> <!--
+                <div class="col-md-1 col-xs-4">
+                    <button id="uncheckAllButton" type="button" class="btn btn-default" style="min-width: 80px; width: 100%;">Uncheck all</button>
+                </div> -->
+                <div class="col-md-1 col-md-offset-1 col-xs-4 col-sm-offset-1">
+                    <button id="clearButton" type="button" class="btn btn-danger" style="min-width: 80px; width: 100%;">Clear</button>
+                </div>
+            </div>
+        </nav>
+        
+    </body>
+</html>

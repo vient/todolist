@@ -1,0 +1,44 @@
+/*
+
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+}
+*/
+body {
+    background-color: black;
+}
+
+#todoHeader {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+.todoElem {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bFbAb0;
+    word-wrap: break-word;
+}
+.todoLabel {
+    margin-left: 5px;
+}
+
+#listRow, #emptyRow {
+    background-color: #FFFAF0;
+}
+
+#emptyRow {
+    padding-top: 15px;
+    margin-bottom: 120px;
+}
+
+#checkAllButton, #uncheckAllButton, #clearButton {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.navbar-my{
+    background-color: #FFFAF0;
+}
