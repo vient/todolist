@@ -8,7 +8,7 @@ createTodo = function(_text) {
     var column = $("<div>").attr("class", "col-sm-11 col-sm-offset-0 col-xs-11 col-xs-offset-0");
     var checkBox = $("<input type='checkbox'>")
     var label = $("<span>").attr("class", "todoLabel").text(_text);
-    var deleteButton = $("<div>").attr("class", "col-sm-1 col-xs-1").append($("<a>").attr("href", "#").append($("<span style='display:none;'>").attr("class", "glyphicon glyphicon-minus-sign")));
+    var deleteButton = $("<div>").attr("class", "col-sm-1 col-xs-1").append($("<a>").attr("href", "#").attr("style", "color: black;").append($("<span style='display:none;'>").attr("class", "glyphicon glyphicon-minus-sign")));
     return main.append(row.append(column.append(checkBox).append(label)).append(deleteButton));
 }
 createTodoAndUpdateStorage = function(_text) {
